@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Konrad Zatorski"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPŁOCK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($)
+        {
+            $.scrollTo(0);
+            $(".arrow").click(function(){$.scrollTo($("header"), 500);});
+        }
+        );
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>300) $(".arrow").fadeIn();
+            else $(".arrow").fadeOut();
+        }
+        )
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <div id="header">
+                <img src="img/icon.png" alt="icon">
+                <h1>
+                    <a href="">TOPŁOCK</a>
+                </h1>
+            </div>
+            <nav>
+                <div id="navigation">
+                    <a href="index12.html">
+                        <div class="nav nav-active">Strona główna</div>
+                    </a>
+                    <a href="">
+                        <div class="nav">Europejski Szlak Gotyku Ceglanego</div>
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="nav">Kontakt</div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div id="text">
+                <div id="text-div">
+                    <h2>TEKST</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, urna in pulvinar lacinia, arcu enim fermentum ligula, sed semper odio urna et magna. In quis enim id tortor accumsan aliquam. Aliquam vestibulum porttitor ullamcorper. Nullam at lectus in felis lacinia blandit dictum a erat. Morbi et est a urna posuere consectetur. Quisque varius consequat gravida. Proin porttitor pellentesque arcu vel gravida. </p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div id="main-content">
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/katedra.jpg" alt="katedra"></div></a>
+                    <figcaption><a href="">Katedra</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/molo.jpg" alt="molo"></div></a>
+                    <figcaption><a href="">Molo</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/zoo.jpg" alt="zoo"></div></a>
+                    <figcaption><a href="">ZOO</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/zamek.jpg" alt="zamek"></div></a>
+                    <figcaption><a href="">Zamek</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/amfiteatr.jpg" alt="amfiteatr"></div></a>
+                    <figcaption><a href="">Amfiteatr</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/mariawici.jpg" alt="mariawici"></div></a>
+                    <figcaption><a href="">Mariawici</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/stary-rynek.jpg" alt="stary-rynek"></div></a>
+                    <figcaption><a href="">Stary rynek</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/zakon.jpg" alt="zakon"></div></a>
+                    <figcaption><a href="">Zakon</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/malachowianka.jpg" alt="malachowianka"></div></a>
+                    <figcaption><a href="">Małachowianka</a></figcaption>
+                </figure>
+                <figure>
+                    <a href=""><div class="film-block"><img src="img/muzeum-mazowieckie.jpg" alt="muzeum-mazowieckie"></div></a>
+                    <figcaption><a href="">Muzeum Mazowieckie</a></figcaption>
+                </figure>
+
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="links-bottom">
+            <div id="socials-wrapper">
+                <div id="yt" class="socials-block"><a href="https://www.youtube.com" target="_blank"><i class="icon-youtube-play"></i></a></div>
+                <div id="fb" class="socials-block"><a href="https://www.facebook.com/?locale=pl_PL" target="_blank"><i class="icon-facebook-squared"></i></a></div>  
+                <div id="ig" class="socials-block"><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a></div>  
+                <div id="tw" class="socials-block"><a href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter-squared"></i></a></div> 
+                <ul>
+                    <li><a href="http://turystykaplock.eu/" target="_blank">Informacja Turystyczna PLOT</a></li>
+                    <li><a href="https://nowy.plock.eu/" target="_blank">Plock.eu</a></li>
+                    <li><a href="https://kalendarzimprez.plock.eu/" target="_blank">Kalendarz imprez</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="arrow"><a href="#"><img src="img/arrow.png" alt="arrow"></a></div>
+</body>
+</html>
