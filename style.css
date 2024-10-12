@@ -89,6 +89,9 @@ main {
     align-items: center;
     justify-content: center;
 }
+#menu {
+    height: 64px;
+}
 @media screen and (min-width: 700px) {
 
     #navigation-wrapper-menu {
