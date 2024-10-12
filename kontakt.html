@@ -43,13 +43,13 @@
             <nav>
                 <div id="navigation">
                     <a href="index.html">
-                        <div class="nav nav-active">Strona główna</div>
+                        <div class="nav">Strona główna</div>
                     </a>
                     <a href="">
                         <div class="nav">Europejski Szlak Gotyku Ceglanego</div>
                     </a>
                     <a href="kontakt.html">
-                        <div class="nav">Kontakt</div>
+                        <div class="nav nav-active">Kontakt</div>
                     </a>
                 </div>
             </nav>
@@ -57,56 +57,39 @@
     </header>
     <main>
         <article>
-            <div id="text">
-                <div id="text-div">
-                    <h2>TEKST</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, urna in pulvinar lacinia, arcu enim fermentum ligula, sed semper odio urna et magna. In quis enim id tortor accumsan aliquam. Aliquam vestibulum porttitor ullamcorper. Nullam at lectus in felis lacinia blandit dictum a erat. Morbi et est a urna posuere consectetur. Quisque varius consequat gravida. Proin porttitor pellentesque arcu vel gravida. </p>
-                </div>
-            </div>
-        </article>
-        <article>
             <div id="main-content">
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/katedra.jpg" alt="katedra"></div></a>
-                    <figcaption><a href="">Katedra</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/molo.jpg" alt="molo"></div></a>
-                    <figcaption><a href="">Molo</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/zoo.jpg" alt="zoo"></div></a>
-                    <figcaption><a href="">ZOO</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/zamek.jpg" alt="zamek"></div></a>
-                    <figcaption><a href="">Zamek</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/amfiteatr.jpg" alt="amfiteatr"></div></a>
-                    <figcaption><a href="">Amfiteatr</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/mariawici.jpg" alt="mariawici"></div></a>
-                    <figcaption><a href="">Mariawici</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/stary-rynek.jpg" alt="stary-rynek"></div></a>
-                    <figcaption><a href="">Stary rynek</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/zakon.jpg" alt="zakon"></div></a>
-                    <figcaption><a href="">Zakon</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/malachowianka.jpg" alt="malachowianka"></div></a>
-                    <figcaption><a href="">Małachowianka</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/muzeum-mazowieckie.jpg" alt="muzeum-mazowieckie"></div></a>
-                    <figcaption><a href="">Muzeum Mazowieckie</a></figcaption>
-                </figure>
+                <article id="kontakt-wrapper">
+                    <section class="kontakt">
+                        <h2>FORMULARZ KONTAKTOWY</h2>
+                        <form action="submit" method="POST">
+                            <label for="name">Imię i nazwisko:</label>
+                            <input type="text" id="name" name="name" required>
 
+                            <label for="email">Adres e-mail:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="subject">Temat:</label>
+                            <input type="text" id="subject" name="subject" required>
+
+                            <label for="message">Wiadomość:</label>
+                            <textarea id="message" name="message" required></textarea>
+
+                            <button type="submit">Wyślij</button>
+                        </form>
+                    </section>
+                    <section class="kontakt">
+                        <h2>INSTYTUCJE</h2>
+                        <div>
+                            <p><a href="http://turystykaplock.eu/" target="_blank">Płocka Lokalna Organizacja Turystyczna</a></p>
+                            <img src="img/plot.png" alt="plot">
+                        </div>
+                        <div>
+                            <p><a href="https://nowy.plock.eu/" target="_blank">Plock.eu</a></p>
+                            <img src="img/plock.eu.jpg" alt="plock.eu">
+                        </div>
+                        
+                    </section>
+                </article>
             </div>
         </article>
     </main>
