@@ -10,18 +10,16 @@ a {
 }
 body {
     background-color: #1A171A;
-    background-image: url(img/main-image.png);
+    background-image: url(img/main-image-3.JPG);
     background-size: cover;
     background-attachment: fixed;
 }
 #logo h1 {
-    font-family: 'Roboto', sans-serif;
     color: white;
     text-transform: uppercase;
     text-align: center;
 }
 #logo h1 a{
-    font-family: 'Sans', sans-serif;
     color: white;
     text-shadow: 0 0 2px white;
     text-transform: uppercase;
@@ -49,7 +47,7 @@ body {
 body header {
     width: 100vw;
     background-color: black;
-    border-bottom: 4px solid #fb6000;
+    border-bottom: 4px solid #bfc58c;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -72,7 +70,7 @@ nav {
     min-width: 50%;
 }
 .nav-active {
-    background-color: #fb6000;
+    background-color: #bfc58c;
     text-shadow: 0 0 6px black;
 }
 #navigation a{
@@ -80,7 +78,7 @@ nav {
     font-weight: 600;
 }
 #navigation a:hover .nav{
-    background-color: #fb6000;
+    background-color: #bfc58c;
     text-shadow: 0 0 6px black;
     transition-duration: 300ms;
 }
@@ -104,8 +102,8 @@ nav {
 }
 hr {
     height: 6px;
-    background-color:#fb6000;
-    border-color: #fb6000;
+    background-color:#bfc58c;
+    border-color: #bfc58c;
     border-radius: 15px;
 }
 .socials-block {
@@ -118,8 +116,8 @@ hr {
     color: white;
 }
 .socials-block a:hover {
-    color: #fb6000;
-    text-shadow: 0 0 2px #fb6000;
+    color: #bfc58c;
+    text-shadow: 0 0 2px #bfc58c;
     transition-duration: 300ms;
 }
 #socials-wrapper {
@@ -131,8 +129,8 @@ hr {
     flex-wrap: wrap;
 }
 span {
-    color: #fb6000;
-    text-shadow: 0 0 2px #fb6000;
+    color: #bfc58c;
+    text-shadow: 0 0 2px #bfc58c;
 }
 .film-block img {
     display: block;
@@ -141,6 +139,11 @@ span {
     margin-top: 20px;
     border-radius: 5px;
 }
+.film-block:hover {
+    transition: 200ms;
+    transform: scale(0.97);
+}
+
 figcaption {
     text-align: center;
 }
@@ -151,15 +154,15 @@ figcaption a {
     text-transform: uppercase;
 }
 figcaption a:hover {
-    color: #fb6000;
-    text-shadow: 0 0 2px #fb6000;
+    color: #bfc58c;
+    text-shadow: 0 0 2px #bfc58c;
     transition-duration: 300ms;
 }
 .film-block img{
     filter: none;
     transition-duration: 300ms;
-    color: #fb6000;
-    text-shadow: 0 0 2px #fb6000;
+    color: #bfc58c;
+    text-shadow: 0 0 2px #bfc58c;
 }
 figure {
     float:left;
@@ -175,10 +178,10 @@ figure {
     margin: 10vh 0;
     max-width: 1000px;
     padding: 2vw;
-    color: white;
-    background-color: #fb6000;
+    color: black;
+    opacity: 0.9;
+    background-color: #d0d0d0;
     text-align: center;
-    text-shadow: 0 0 6px black;
 }
 #footer-div {
     text-align: center;
@@ -191,8 +194,8 @@ figure {
     color: white;
 }
 #footer-div a:hover {
-    color: #fb6000;
-    text-shadow: 0 0 2px #fb6000;
+    color: #bfc58c;
+    text-shadow: 0 0 2px #bfc58c;
     transition-duration: 300ms;
 }
 .arrow img{
@@ -233,8 +236,8 @@ figure {
     font-size: 14px;
 }
 #links-bottom li a:hover{
-    color: #fb6000;
-    text-shadow: 0 0 2px #fb6000;
+    color: #bfc58c;
+    text-shadow: 0 0 2px #bfc58c;
     transition-duration: 300ms;
 }
 #links-bottom li{
