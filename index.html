@@ -10,7 +10,7 @@
     <title>Turystyka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
@@ -20,7 +20,7 @@
         jQuery(function($)
         {
             $.scrollTo(0);
-            $(".arrow").click(function(){$.scrollTo($("#logo"), 500);});
+            $(".arrow").click(function(){$.scrollTo($("header"), 500);});
         }
         );
         $(window).scroll(function()
@@ -34,15 +34,36 @@
 <body>
     <header>
         <div id="logo">
-            <h1><a href="index.html">Turystyka</a></h1>
+            <div id="header">
+                <img src="img/icon.png" alt="icon">
+                <h1>
+                    <a href="index.html">TOPŁOCK</a>
+                </h1>
+            </div>
             <nav>
                 <div id="navigation">
-                    <a href=""><div class="nav nav-active">Strona główna</div></a><a href=""><div class="nav">Europejski Szlak Gotyku Ceglanego</div></a><a href="subsites/register.html"><div class="nav">Kontakt</div></a>
+                    <a href="">
+                        <div class="nav nav-active">Strona główna</div>
+                    </a>
+                    <a href="">
+                        <div class="nav">Europejski Szlak Gotyku Ceglanego</div>
+                    </a>
+                    <a href="">
+                        <div class="nav">Kontakt</div>
+                    </a>
                 </div>
             </nav>
         </div>
     </header>
     <main>
+        <article>
+            <div id="text">
+                <div id="text-div">
+                    <h2>TEKST</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, urna in pulvinar lacinia, arcu enim fermentum ligula, sed semper odio urna et magna. In quis enim id tortor accumsan aliquam. Aliquam vestibulum porttitor ullamcorper. Nullam at lectus in felis lacinia blandit dictum a erat. Morbi et est a urna posuere consectetur. Quisque varius consequat gravida. Proin porttitor pellentesque arcu vel gravida. </p>
+                </div>
+            </div>
+        </article>
         <article>
             <div id="main-content">
                 <figure>
@@ -85,37 +106,23 @@
                     <a href=""><div class="film-block"><img src="img/muzeum-mazowieckie.jpg" alt="muzeum-mazowieckie"></div></a>
                     <figcaption><a href="">Muzeum Mazowieckie</a></figcaption>
                 </figure>
+
             </div>
         </article>
     </main>
-    <article>
-        <div id="wsparcie">
-            <div id="wsparcie-div">
-                <h2>WSPARCIE KANAŁU I WITRYN</h2>
-            </div>
-        </div>
-        <footer>
-            <div id="links-bottom">
-                <div id="socials-wrapper">
-                    <div id="yt" class="socials-block"><a href="https://www.youtube.com" target="_blank"><i class="icon-youtube-play"></i></a></div>
-                    <div id="fb" class="socials-block"><a href="https://www.facebook.com/?locale=pl_PL" target="_blank"><i class="icon-facebook-squared"></i></a></div>  
-                    <div id="ig" class="socials-block"><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a></div>  
-                    <div id="tw" class="socials-block"><a href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter-squared"></i></a></div> 
-                    <ul>
-                        <li><a href="http://turystykaplock.eu/">Informacja Turystyczna PLOT</a></li>
-                        <li><a href="https://nowy.plock.eu/">Plock.eu</a></li>
-                        <li><a href="https://kalendarzimprez.plock.eu/">Kalendarz imprez</a></li>
-                        <li><a href="">---------</a></li>
-                    </ul>
-                    <div style="clear:both;"></div>
-                </div>
-            </div>
-        </footer>
-    </article>
     <footer>
-        <div id="footer-div">
-            <hr>
-            stopka <a href="">Regulamin</a> i <a href="">Polityka prywatności</a>
+        <div id="links-bottom">
+            <div id="socials-wrapper">
+                <div id="yt" class="socials-block"><a href="https://www.youtube.com" target="_blank"><i class="icon-youtube-play"></i></a></div>
+                <div id="fb" class="socials-block"><a href="https://www.facebook.com/?locale=pl_PL" target="_blank"><i class="icon-facebook-squared"></i></a></div>  
+                <div id="ig" class="socials-block"><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a></div>  
+                <div id="tw" class="socials-block"><a href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter-squared"></i></a></div> 
+                <ul>
+                    <li><a href="http://turystykaplock.eu/" target="_blank">Informacja Turystyczna PLOT</a></li>
+                    <li><a href="https://nowy.plock.eu/" target="_blank">Plock.eu</a></li>
+                    <li><a href="https://kalendarzimprez.plock.eu/" target="_blank">Kalendarz imprez</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <div class="arrow"><a href="#"><img src="img/arrow.png" alt="arrow"></a></div>

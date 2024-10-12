@@ -1,9 +1,10 @@
 * {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+}  
 a {
     text-decoration: none;
 }
@@ -18,31 +19,57 @@ body {
     color: white;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 900;
 }
 #logo h1 a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Sans', sans-serif;
     color: white;
     text-shadow: 0 0 2px white;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 5px;
-    font-weight: 900;
+    letter-spacing: 3px;
+    font-weight: 400;
     font-size: 62px;
 }
 #logo {
-    background-color: black;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+
 }
 #navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
+}
+body header {
+    width: 100vw;
+    background-color: black;
     border-bottom: 4px solid #fb6000;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 .nav {
-    display: inline-block;
-    padding: 15px 25px;
+    display: block;
     background-color: black;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 50%;
 }
 .nav-active {
     background-color: #fb6000;
@@ -57,13 +84,6 @@ body {
     text-shadow: 0 0 6px black;
     transition-duration: 300ms;
 }
-
-
-
-
-
-
-
 #main-content{
     display: flex;
     align-items: center;
@@ -76,18 +96,12 @@ body {
     background-color: #222;
     /* From https://css.glass */
     background: rgba(51, 51, 51, 0.7);
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.8px);
     -webkit-backdrop-filter: blur(7.8px);
     padding: 6vh 0;
 }
-
-
-
-
-
-
 hr {
     height: 6px;
     background-color:#fb6000;
@@ -97,7 +111,7 @@ hr {
 .socials-block {
     display: block;
     float: left;
-    margin-left: 40px;
+    margin: 0 20px;
     text-align: center;
 }
 .socials-block a {
@@ -108,6 +122,14 @@ hr {
     text-shadow: 0 0 2px #fb6000;
     transition-duration: 300ms;
 }
+#socials-wrapper {
+    margin: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 span {
     color: #fb6000;
     text-shadow: 0 0 2px #fb6000;
@@ -117,9 +139,7 @@ span {
     width: 210px;
     margin: 20px;
     margin-top: 20px;
-    border: 1px solid #fb6000;
-    box-shadow: 0 0 5px #fb6000;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 figcaption {
     text-align: center;
@@ -135,8 +155,7 @@ figcaption a:hover {
     text-shadow: 0 0 2px #fb6000;
     transition-duration: 300ms;
 }
-a:hover .film-block img{
-    border: 1px solid #fb6000;
+.film-block img{
     filter: none;
     transition-duration: 300ms;
     color: #fb6000;
@@ -145,13 +164,21 @@ a:hover .film-block img{
 figure {
     float:left;
 }
-#wsparcie {
-    background-color: #fb6000;
+#text {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#wsparcie-div {
+#text-div {
+    border-radius: 5px;
+    margin: 10vh 0;
+    max-width: 1000px;
+    padding: 2vw;
     color: white;
     background-color: #fb6000;
     text-align: center;
+    text-shadow: 0 0 6px black;
 }
 #footer-div {
     text-align: center;
@@ -183,14 +210,23 @@ figure {
     transition-duration: 300ms;
 }
 #links-bottom{
-    width: 1000px;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #links-bottom a{
     font-size: 30px;
+}
+#links-botton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #links-bottom li a{
     color: white;
@@ -202,9 +238,9 @@ figure {
     transition-duration: 300ms;
 }
 #links-bottom li{
-    float:left;
+    float: left;
     list-style-type: none;
-    margin: 0px 20px;
+    margin: 0px 10px;
     line-height: 60px;
 }
 footer {
@@ -214,4 +250,11 @@ label{
     color: white;
     text-transform: uppercase;
     margin-right: 30px;
+}
+#logo img {
+    width: 64px;
+}
+p {
+    line-height: 25px;
+    text-align: justify;
 }
