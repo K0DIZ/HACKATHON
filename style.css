@@ -262,3 +262,40 @@ p {
     line-height: 25px;
     text-align: justify;
 }
+
+
+
+
+
+.card {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    color: white;
+}
+
+.card-header {
+    background-color: #fb6000;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.card-content {
+    display: none; /* Ukrywanie treści na początku */
+    padding: 15px;
+}
+
+.toggle-button {
+    background-color: #fb6000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+.toggle-button:hover {
+    background-color: black;
+}
