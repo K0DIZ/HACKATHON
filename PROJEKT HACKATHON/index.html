@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Konrad Zatorski"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPŁOCK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($)
+        {
+            $.scrollTo(0);
+            $(".arrow").click(function(){$.scrollTo($("#logo"), 500);});
+        }
+        );
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>300) $(".arrow").fadeIn();
+            else $(".arrow").fadeOut();
+        }
+        )
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <div id="header">
+                <img src="img/icon.png" alt="icon">
+                <h1>
+                    <a href="glowna.html">TOPŁOCK</a>
+                </h1>
+            </div>
+            <nav>
+                <div id="navigation">
+                    <a href="glowna.html">
+                        <div class="nav">Strona główna</div>
+                    </a>
+                    <a href="gotycki.html">
+                        <div class="nav">Europejski Szlak Gotyku Ceglanego</div>
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="nav">Kontakt</div>
+                    </a>
+                    <div id="change-language">
+                        <img src="img/poland.png" alt="poland">
+                        <!-- <a href="https://www.flaticon.com/free-icons/poland" title="poland icons">Poland icons created by Freepik - Flaticon</a> -->
+                        <img src="img/united-kingdom.png" alt="united-kingdom">
+                        <!-- <a href="https://www.flaticon.com/free-icons/uk-flag" title="uk flag icons">Uk flag icons created by riajulislam - Flaticon</a> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div id="main-content">
+                <figure class="ff">
+                    <div class="film-block"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4853.182184621656!2d19.694377068735225!3d52.54083214133413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c7a0ab25d56a3%3A0xd762a4115d4b86d7!2sBazylika%20Katedralna%20Wniebowzi%C4%99cia%20NMP!5e0!3m2!1spl!2spl!4v1728744659230!5m2!1spl!2spl" padding="50px" margin="50px" width="210" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <h2 class="card-header">Krótki opis</h2>
+                        <div class="card-content">
+                            <p>W Płocku znajduje się jedna z najstarszych katedr w Polsce, zbudowana w stylu romańskim. Drzwi katedry, wykonane w latach 1152-1154 w Magdeburgu, ozdobione są płaskorzeźbami biblijnymi. Oryginalne drzwi są w Soborze św. Sofii w Rosji, a replika zawisła w katedrze w 1981 roku. Katedra, wielokrotnie odbudowywana i przekształcana, zdobyła tytuł Bazyliki Mniejszej. W jej wnętrzu znajdują się cenne nagrobki, polichromie oraz organy z 1907 roku.</p>
+                        </div>
+                        <button class="toggle-button">Rozwiń</button>
+                    </div>
+                    <br>
+                    
+                </figure>
+                <figure>
+                    <div class="film-block"><img src="adios.png" alt="audio"></div>
+                </figure>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="links-bottom">
+            <div id="socials-wrapper">
+                <div id="yt" class="socials-block"><a href="https://www.youtube.com" target="_blank"><i class="icon-youtube-play"></i></a></div>
+                <div id="fb" class="socials-block"><a href="https://www.facebook.com/?locale=pl_PL" target="_blank"><i class="icon-facebook-squared"></i></a></div>  
+                <div id="ig" class="socials-block"><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a></div>  
+                <div id="tw" class="socials-block"><a href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter-squared"></i></a></div> 
+                <ul>
+                    <li><a href="http://turystykaplock.eu/">Informacja Turystyczna PLOT</a></li>
+                    <li><a href="https://nowy.plock.eu/">Plock.eu</a></li>
+                    <li><a href="https://kalendarzimprez.plock.eu/">Kalendarz imprez</a></li>
+                    
+                </ul>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </footer>
+    <div class="arrow"><a href="#"><img src="img/arrow.png" alt="arrow"></a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const button = document.querySelector('.toggle-button');
+        const content = document.querySelector('.card-content');
+    
+        button.addEventListener('click', function() {
+            // Sprawdzanie, czy treść jest widoczna
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Zwijanie treści
+                button.textContent = "Rozwiń"; // Zmiana tekstu przycisku
+            } else {
+                content.style.display = "block"; // Rozwijanie treści
+                button.textContent = "Zwiń"; // Zmiana tekstu przycisku
+            }
+        });
+    });</script>
+</body>
+</html>
