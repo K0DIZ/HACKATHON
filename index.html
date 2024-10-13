@@ -10,8 +10,8 @@
     <title>TOPŁOCK</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -20,7 +20,7 @@
         jQuery(function($)
         {
             $.scrollTo(0);
-            $(".arrow").click(function(){$.scrollTo($("header"), 500);});
+            $(".arrow").click(function(){$.scrollTo($("#logo"), 500);});
         }
         );
         $(window).scroll(function()
@@ -37,94 +37,113 @@
             <div id="header">
                 <img src="img/icon.png" alt="icon">
                 <h1>
-                    <a href="index.html">TOPŁOCK</a>
+                    <a href="index12.html">TOPŁOCK</a>
                 </h1>
             </div>
             <nav>
                 <div id="navigation">
-                    <a href="index.html">
-                        <div class="nav nav-active">Strona główna</div>
+                    <a href="index12.html">
+                        <div class="nav">Strona główna</div>
                     </a>
-                    <a href="">
+                    <a href="gotycki.html">
                         <div class="nav">Europejski Szlak Gotyku Ceglanego</div>
                     </a>
                     <a href="kontakt.html">
                         <div class="nav">Kontakt</div>
                     </a>
+                    <div id="change-language">
+                        <img src="img/poland.png" alt="poland">
+                        <!-- <a href="https://www.flaticon.com/free-icons/poland" title="poland icons">Poland icons created by Freepik - Flaticon</a> -->
+                        <img src="img/united-kingdom.png" alt="united-kingdom">
+                        <!-- <a href="https://www.flaticon.com/free-icons/uk-flag" title="uk flag icons">Uk flag icons created by riajulislam - Flaticon</a> -->
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
     <main>
         <article>
-            <div id="text">
-                <div id="text-div">
-                    <h2>TEKST</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, urna in pulvinar lacinia, arcu enim fermentum ligula, sed semper odio urna et magna. In quis enim id tortor accumsan aliquam. Aliquam vestibulum porttitor ullamcorper. Nullam at lectus in felis lacinia blandit dictum a erat. Morbi et est a urna posuere consectetur. Quisque varius consequat gravida. Proin porttitor pellentesque arcu vel gravida. </p>
-                </div>
-            </div>
-        </article>
-        <article>
             <div id="main-content">
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/katedra.jpg" alt="katedra"></div></a>
-                    <figcaption><a href="">Katedra</a></figcaption>
+                <figure class="ff">
+                    <div class="film-block"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4853.182184621656!2d19.694377068735225!3d52.54083214133413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c7a0ab25d56a3%3A0xd762a4115d4b86d7!2sBazylika%20Katedralna%20Wniebowzi%C4%99cia%20NMP!5e0!3m2!1spl!2spl!4v1728744659230!5m2!1spl!2spl" padding="50px" margin="50px" width="210" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                   
                 </figure>
                 <figure>
-                    <a href=""><div class="film-block"><img src="img/molo.jpg" alt="molo"></div></a>
-                    <figcaption><a href="">Molo</a></figcaption>
+                    <div class="card">
+                        <h2 class="card-header">Krótki opis</h2>
+                        <div class="card-content">
+                            <p>W Płocku znajduje się jedna z najstarszych katedr w Polsce, zbudowana w stylu romańskim. Drzwi katedry, wykonane w latach 1152-1154 w Magdeburgu, ozdobione są płaskorzeźbami biblijnymi. Oryginalne drzwi są w Soborze św. Sofii w Rosji, a replika zawisła w katedrze w 1981 roku. Katedra, wielokrotnie odbudowywana i przekształcana, zdobyła tytuł Bazyliki Mniejszej. W jej wnętrzu znajdują się cenne nagrobki, polichromie oraz organy z 1907 roku.</p>
+                        </div>
+                        <button class="toggle-button">Rozwiń</button>
+                    </div>
+                    <br>
+                    
                 </figure>
                 <figure>
-                    <a href=""><div class="film-block"><img src="img/zoo.jpg" alt="zoo"></div></a>
-                    <figcaption><a href="">ZOO</a></figcaption>
+                    <div class="film-block"><img src="adios.png" alt="audio"></div>
+                    <br>     
+                            
+                           
+                    <br>
+                    
                 </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/zamek.jpg" alt="zamek"></div></a>
-                    <figcaption><a href="">Zamek</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/amfiteatr.jpg" alt="amfiteatr"></div></a>
-                    <figcaption><a href="">Amfiteatr</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/mariawici.jpg" alt="mariawici"></div></a>
-                    <figcaption><a href="">Mariawici</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/stary-rynek.jpg" alt="stary-rynek"></div></a>
-                    <figcaption><a href="">Stary rynek</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/zakon.jpg" alt="zakon"></div></a>
-                    <figcaption><a href="">Zakon</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/malachowianka.jpg" alt="malachowianka"></div></a>
-                    <figcaption><a href="">Małachowianka</a></figcaption>
-                </figure>
-                <figure>
-                    <a href=""><div class="film-block"><img src="img/muzeum-mazowieckie.jpg" alt="muzeum-mazowieckie"></div></a>
-                    <figcaption><a href="">Muzeum Mazowieckie</a></figcaption>
-                </figure>
-
+                
             </div>
         </article>
     </main>
-    <footer>
-        <div id="links-bottom">
-            <div id="socials-wrapper">
-                <div id="yt" class="socials-block"><a href="https://www.youtube.com" target="_blank"><i class="icon-youtube-play"></i></a></div>
-                <div id="fb" class="socials-block"><a href="https://www.facebook.com/?locale=pl_PL" target="_blank"><i class="icon-facebook-squared"></i></a></div>  
-                <div id="ig" class="socials-block"><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a></div>  
-                <div id="tw" class="socials-block"><a href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter-squared"></i></a></div> 
-                <ul>
-                    <li><a href="http://turystykaplock.eu/" target="_blank">Informacja Turystyczna PLOT</a></li>
-                    <li><a href="https://nowy.plock.eu/" target="_blank">Plock.eu</a></li>
-                    <li><a href="https://kalendarzimprez.plock.eu/" target="_blank">Kalendarz imprez</a></li>
-                </ul>
+    <article>
+        
+        <footer>
+            <div id="links-bottom">
+                <div id="socials-wrapper">
+                    
+                    <ul>
+                        <li><a href="http://turystykaplock.eu/">Informacja Turystyczna PLOT</a></li>
+                        <li><a href="https://nowy.plock.eu/">Plock.eu</a></li>
+                        <li><a href="https://kalendarzimprez.plock.eu/">Kalendarz imprez</a></li>
+                       
+                    </ul>
+                    <div style="clear:both;"></div>
+                </div>
             </div>
+        </footer>
+    </article>
+    <footer>
+        <div id="footer-div">
+            <hr>
+             <a href="">Regulamin</a> i <a href="">Polityka prywatności</a>
         </div>
     </footer>
     <div class="arrow"><a href="#"><img src="img/arrow.png" alt="arrow"></a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const button = document.querySelector('.toggle-button');
+        const content = document.querySelector('.card-content');
+    
+        button.addEventListener('click', function() {
+            // Sprawdzanie, czy treść jest widoczna
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Zwijanie treści
+                button.textContent = "Rozwiń"; // Zmiana tekstu przycisku
+            } else {
+                content.style.display = "block"; // Rozwijanie treści
+                button.textContent = "Zwiń"; // Zmiana tekstu przycisku
+            }
+        });
+    });</script>
 </body>
 </html>

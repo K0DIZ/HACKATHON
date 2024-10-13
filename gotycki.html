@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Konrad Zatorski"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPŁOCK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($)
+        {
+            $.scrollTo(0);
+            $(".arrow").click(function(){$.scrollTo($("header"), 500);});
+        }
+        );
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>300) $(".arrow").fadeIn();
+            else $(".arrow").fadeOut();
+        }
+        )
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <div id="header">
+                <img src="img/icon.png" alt="icon">
+                <h1>
+                    <a href="index12.html">TOPŁOCK</a>
+                </h1>
+            </div>
+            <nav>
+                <div id="navigation">
+                    <a href="index12.html">
+                        <div class="nav">Strona główna</div>
+                    </a>
+                    <a href="gotycki.html">
+                        <div class="nav nav-active">Europejski Szlak Gotyku Ceglanego</div>
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="nav">Kontakt</div>
+                    </a>
+                    <div id="change-language">
+                        <img src="img/poland.png" alt="poland">
+                        <!-- <a href="https://www.flaticon.com/free-icons/poland" title="poland icons">Poland icons created by Freepik - Flaticon</a> -->
+                        <img src="img/united-kingdom.png" alt="united-kingdom">
+                        <!-- <a href="https://www.flaticon.com/free-icons/uk-flag" title="uk flag icons">Uk flag icons created by riajulislam - Flaticon</a> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div id="subsite-content">
+                <div id="gotyk-opis">
+                    <h2>CZYM JEST EUROPEJSKI SZLAK GOTYKU CEGLANEGO?</h2>
+                    <p>Europejski Szlak Gotyku Ceglanego to międzynarodowa trasa turystyczna, która łączy zabytki architektury gotyckiej, wzniesione z cegły, głównie w rejonie basenu Morza Bałtyckiego. Styl ten rozwinął się w średniowieczu w regionach, gdzie brakowało kamienia, a cegła stała się dominującym materiałem budowlanym. Gotyk ceglany, charakterystyczny dla Europy Północnej, wyróżnia się monumentalnymi formami i surowym, choć często bogato zdobionym, wyglądem.</p>
+                    <hr>
+                    <h2>Cechy Europejskiego Szlaku Gotyku Ceglanego:</h2>
+                    <ul>
+                        <li>Cegła jako główny materiał budowlany – brak dostępu do kamienia w rejonach północnych spowodował, że architekci i budowniczowie rozwijali techniki wznoszenia dużych budowli z cegły.</li>
+                        <li>Surowa elegancja – budowle charakteryzują się prostymi, choć monumentalnymi formami. Zdobienia są zazwyczaj wkomponowane w strukturę budynków, wykorzystując ceglane detale, fryzy i geometryczne wzory.</li>
+                        <li>Religijne i świeckie budynki – na szlaku znajdują się zarówno gotyckie kościoły, katedry i klasztory, jak i ratusze, zamki, fortyfikacje oraz budowle mieszkalne.</li>
+                    </ul>
+                    <hr>
+                    <img src="img/szlak.png" alt="szlak">
+                    <hr>
+                    <p>
+                        Nadbałtyckie państwa: Dania, Niemcy i Polska, będąc świadome wartości, znaczenia i potencjału ceglanych gotyckich budowli, połączyły siły i utworzyły stowarzyszenie „Europejski Szlak Gotyku Ceglanego” (EUROB). Jego celem jest promowanie wspólnego dziedzictwa kulturalnego i piękna gotyku ceglanego. Co roku w trzeci weekend czerwca we wszystkich miastach należących do tego międzynarodowego projektu obchodzony jest Dzień Gotyku Ceglanego.
+                        Na Europejskim Szlaku Gotyku Ceglanego znajduje się 8 polskich miast. To Chełmno, Gdańsk, Grudziądz, Olsztyn, Sławno, Stargrad Szczeciński, Szczecin i Płock. Patrząc na mapę, widać, że Płock jest najdalej na południe wysuniętym miastem w Polsce, przez które ten szlak przebiega. Poniżej osiem płockich atrakcji Europejskiego Szlaku Gotyku Ceglanego.</p>
+                    <hr>
+                    <div id="obiekty-gotyk">
+                        <div class="gotyk-obiekt">
+                            <h3>Kościół pw. św. Dominika</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9706.45656290137!2d19.67960177592682!3d52.54041516845348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c709f5ede0ffd%3A0x64f1192ad04e164b!2zS2_Fm2Npw7PFgiBSenltc2tva2F0b2xpY2tpIMWady4gRG9taW5pa2E!5e0!3m2!1spl!2spl!4v1728784760961!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="gotyk-obiekt">
+                            <h3>Dom pod Trąbami</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510.12394447447707!2d19.68945107456456!3d52.54117396959099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c709f8a77ce0d%3A0x72640f2cb049901e!2sTumska%202%2C%2009-402%20P%C5%82ock!5e0!3m2!1spl!2spl!4v1728785183000!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="gotyk-obiekt">
+                            <h3>Relikty zamku i dawne opactwo benedyktynów</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.6337481423375!2d19.689831510751848!3d52.54006044542777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c70a1e5a52435%3A0x8c94b23615681719!2sDAWNY%20KLASZTOR%20DOMINIKAN%C3%93W%20W%20P%C5%81OCKU!5e0!3m2!1spl!2spl!4v1728784947083!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="gotyk-obiekt">
+                            <h3>Dawna kanonia</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278.140294118467!2d19.688264887245843!3d52.54224161056693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c709fedef221d%3A0x73d0f64dcc567d1a!2sTOWARZYSTWO%20NAUKOWE%20P%C5%81OCKIE!5e0!3m2!1spl!2spl!4v1728785585980!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="gotyk-obiekt">
+                            <h3>Dawna kolegiata św. Michała Archanioła</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.4309924260065!2d19.683038777137746!3d52.543728472067464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c7a756cb6563f%3A0xc3a395c9fc9ac0e5!2sKolegiata%20%C5%9Aw.%20Micha%C5%82a%20Archanio%C5%82a!5e0!3m2!1spl!2spl!4v1728785006593!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="gotyk-obiekt">
+                            <h3>Dawna baszta obronna</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.2665801807743!2d19.682711499999996!3d52.54670270000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c7a743f604c5b%3A0x93900776cb051d58!2sBASZTA%20OBRONNA%20W%20P%C5%81OCKU!5e0!3m2!1spl!2spl!4v1728785025070!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="gotyk-obiekt">
+                            <h3>Mur miejski</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d540.4537408576607!2d19.68809598769402!3d52.541481740611005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c71cd70ed29ad%3A0x7f825ee1f3b61c50!2sWIE%C5%BBA%20SZLACHECKA%20W%20P%C5%81OCKU!5e0!3m2!1spl!2spl!4v1728785804037!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="gotyk-obiekt">
+                            <h3>Kościół farny pw. Św. Bartłomieja</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.3678646198955!2d19.680799877137748!3d52.54487047206776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c7a745f78ba3b%3A0x686b2ecdf597dbb5!2zS2_Fm2Npw7PFgiBSenltc2tva2F0b2xpY2tpIMWady4gQmFydMWCb21pZWphIEFwb3N0b8WCYQ!5e0!3m2!1spl!2spl!4v1728785075490!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="links-bottom">
+            <div id="socials-wrapper">
+                <div id="yt" class="socials-block"><a href="https://www.youtube.com" target="_blank"><i class="icon-youtube-play"></i></a></div>
+                <div id="fb" class="socials-block"><a href="https://www.facebook.com/?locale=pl_PL" target="_blank"><i class="icon-facebook-squared"></i></a></div>  
+                <div id="ig" class="socials-block"><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a></div>  
+                <div id="tw" class="socials-block"><a href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter-squared"></i></a></div> 
+                <ul>
+                    <li><a href="http://turystykaplock.eu/" target="_blank">Informacja Turystyczna PLOT</a></li>
+                    <li><a href="https://nowy.plock.eu/" target="_blank">Plock.eu</a></li>
+                    <li><a href="https://kalendarzimprez.plock.eu/" target="_blank">Kalendarz imprez</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="arrow"><a href="#"><img src="img/arrow.png" alt="arrow"></a></div>
+</body>
+</html>
