@@ -28,6 +28,10 @@ body {
     font-weight: 400;
     font-size: 62px;
 }
+#logo h1 a:hover{
+    color: #adc4dd;
+    transition: 300ms;
+}
 #logo {
     width: 100vw;
     margin: auto;
@@ -61,6 +65,7 @@ body header {
 }
 .nav {
     display: block;
+    height: 100%;
     background-color: black;
     padding: 10px;
 }
@@ -429,3 +434,39 @@ iframe {
     width: 42px;
     padding: 5px;
 }
+.card {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    color: white;
+}
+.card-header {
+    background-color: #bfc58c;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.card-content {
+    display: none; /* Ukrywanie treści na początku */
+    padding: 15px;
+}
+
+.toggle-button {
+    background-color: #bfc58c;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+.toggle-button:hover {
+    background-color: black;
+}
+.film-block{
+    margin: 30px;}
+    #pp{
+        color: white;
+    }
